@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>www.SUZ-LIZ.com</title>
+  <link rel="stylesheet" type="text/css">
+  <style>
+    button {
+      background-color: cyan;
+      color: black;
+      font-size: 26px;
+      border-radius: 3px;
+      height: 40px;
+    }
+    table{
+    width: 80%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    }
+    th, td{
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 8px;
+    }
+    th{
+    background-color: #f4f4f4;
+    font-weight: bold;
+    }
+     tr:nth-child(even) {
+   background-color: #f9f9f9;
+ }
+  </style>
+</head>
+
+<body>
+  <header>
+    <button onclick="location.href='Index.html'">
+      back<<
+    </button>
+  </header>
+  <p>our location can be found by pressing this button</p>
+  <button id="togglebutton">view</button>
+  <div id="hiddensection" style="display: none;">
+    <p>28, Okewoye Street, Off Iganmode Road, Ota, Ogun state, Nigeria.</p><br>
+    <p>OR: 110, Ilogbo/Coca-Cola Road, Oju-ore, Ota, Ogun State, Nigeria.</p><br>
+    <p>OR: 8, Adeseye Close, Off Town Planning Office, Ota, Ogun state.</p><br>
+    <p>for more info:</p><br>
+    <p>p.O. Box 652 Ota, Nigeria.</p>
+    <p>E-mail: suzliz_2005@yahoo..com</p>
+    <p>Tel: 08022838996, 08023182205, 08033134726.</p>
+  </div>
+  <script>
+    document.getElementById('togglebutton').addEventListener('click', function() {
+      var section = document.getElementById('hiddensection');
+      if (section.style.display === 'none' || section.style.display === '') {
+        section.style.display = 'block';
+        this.textContent = 'hidden';
+      } else {
+        section.style.display = 'none';
+        this.textContent = 'view';
+      }
+    });
+  </script>
+  <h1><p id="para">since <span style="background-color: red; color: green; width="auto" height="50" border-radius: 6px;">1991</span>
+<p>we believe all children deserve the right to education so we taught of expanding our education online.</p>
+  </p>
+  
+  <section>
+  <p>we also provide fun for children since the saying goes (All work and no play makes jack a dull boy)
+  e.g 
+  <ol>
+  <li>cultural day</li>
+  <li>children day</li>
+  <li>Christmas party/carrol</li>
+  <li>world science day</li>
+  <li>show your talent</li>
+  <li>quizes</li>
+  <li>debates</li>
+  <li>competitions</li>
+  <li>sports e.t.c</li>
+  </ol></p>
+  </section>
+  </h1>
+<section id="time">
+<p>here this is how much time we dedicate to our students</p>
+
+<table width="auto">
+<thead>
+<tr>
+<td>School</td>
+<td>opens</td>
+<td>Assembly</td>
+<td>school hours</td>
+<td>break time</td>
+<td>lesson</td>
+<td>cleaning time</td>
+<td>closing time</td>
+<td>Extra lesson</td>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Primary</td>
+<td>7:00am</td>
+<td>7:45am-8:00am</td>
+<td>8:00am-11:00am</td>
+<td>11:00am-11:30am</td>
+<td>2:00pm-2:45pm</td>
+<td>2:45pm-3:00pm</td>
+<td>3:00pm</td>
+<td>3:00pm-4:00pm</td>
+</tr>
+<tr>
+<td>secondary</td>
+<td>7:00am</td>
+<td>7:45am-8:00am</td>
+<td>8:00am-11:30am</td>
+<td>11:30am-12:00pm</td>
+<td>3:00pm-3:45pm</td>
+<td>3:45pm-4:00pm</td>
+<td>4:00pm</td>
+<td>4:00pm-5:30pm</td>
+</tr>
+</tbody>
+</table>
+</section>
+  
+</body>
+
+</html>
